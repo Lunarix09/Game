@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link href="css1.css" rel="stylesheet">
+  <script src="popup1.js" defer=""></script>
+  <script src="script1.js" defer=""></script>
+   
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap')
+ </style>
+
+<title>3images 1mot</title>
+
+</head>
+<body>   
+
+
+  <header>
+    <!-- je mets ici des balise span, de classes distinctes
+  pour pouvoir appliquer du style individuellement
+  à chacun d'eux-->
+  <h1> <span class="chiffres">3 </span> <span class="mots">images </span>
+     <span class="chiffres">1</span> <span class="mots"> mot</span> 
+  </h1> 
+  </header>
+  
+  <!-- je crée une div images, qui sera l'emplacement 
+  dds images du jeux, avec un text Images qui sera
+  remplacé par ces dernières-->
+  <div class="grid">
+    <div class="images">
+     <span><img src="playgame.png"></span>
+    </div>
+  </div>  
+  
+  <!--je crée un bouton pour lancer le jeux-->
+
+  <div class="lancer">
+    <button id="btnplay"> <p>play</p> </button>
+  </div> 
+  
+ 
+
+  <!-- je crée une div option, qui contient , le 
+  bouton next, la zone de saisie, et le bouton
+  ok pour valider-->
+
+  <div class="option">
+     <input type="text" name="réponse" id="zoneréponse" placeholder="Entrer votre réponse ici !" >
+     <span> 
+       <button id="btnnext"> <p>next</p> </button>
+       <button id="btnok"> <p>ok</p> </button> 
+     </span>
+  </div>
+
+  <div class="score">
+       <p>Votre score : <span>0</span></p>
+    </div>
+    
+
+ <div class="partager">
+       <button class="btnpartager">Partager</button>  
+  </div>
+  
+ 
+  <footer>
+    <p>&copy; Lunarix 02 2024<img src="lunarix.png"></p>
+  </footer>
+
+   
+  <div class="popupbackground">
+    <div class="popup">
+       <p>Partager votre score avec un ami !</p>
+       <form method="get" action="">
+         <label for="nom">Entrer votre nom !</label>
+         <input type="text" id="nom" name="nom" placeholder="Nom">
+         <label for="email">Entrer l'email de votre ami !</label>
+         <input type="text" id="email" name="email" placeholder="Ex: xxx@gmail.com">
+         <button id="btnenvoyer">Envoyer</button>
+       </form>
+    </div>
+  </div>
+  
+
+</body>
+</html>
