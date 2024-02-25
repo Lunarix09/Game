@@ -3,7 +3,7 @@ let tbimages= ["image1.png", "image2.png", "image3.png","image4.png", "image5.pn
 
 ];
 let tbmots=["yeux","reine","disney", "pousser", "appache", "ananas", "arcade", "gymnaste", "arcodeon", "carrefour",
-"cafetierre", "bulldozer", "brasserie", "carreaux"
+"caffetiere", "bulldozer", "brasserie", "carreaux"
 
 ]; 
 let playimages= ["playgame.png", "playgame1.png", "playgame3.png", "playgame4.png"];
