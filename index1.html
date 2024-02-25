@@ -6,24 +6,19 @@
   <link href="css1.css" rel="stylesheet">
   <script src="popup1.js" defer=""></script>
   <script src="script1.js" defer=""></script>
-   
- <style>
- @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap')
- </style>
-
-<title>3images 1mot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>3 i mages 1mot</title>
 
 </head>
 <body>   
-
 
   <header>
     <!-- je mets ici des balise span, de classes distinctes
   pour pouvoir appliquer du style individuellement
   à chacun d'eux-->
-  <h1> <span class="chiffres">3 </span> <span class="mots">images </span>
-     <span class="chiffres">1</span> <span class="mots"> mot</span> 
-  </h1> 
+    <h1> <span class="chiffres">3&nbsp</span> <span class="mots">images&nbsp</span>
+     <span class="chiffres">1&nbsp</span> <span class="mots"> mot</span> 
+    </h1> 
   </header>
   
   <!-- je crée une div images, qui sera l'emplacement 
@@ -35,10 +30,10 @@
     </div>
   </div>  
   
-  <!--je crée un bouton pour lancer le jeux-->
+  <!-- je crée un bouton pour lancer le jeux -->
 
   <div class="lancer">
-    <button id="btnplay"> <p>play</p> </button>
+    <button title="Appuyer pour commencer" id="btnplay"> <p>play</p> </button>
   </div> 
   
  
@@ -50,39 +45,50 @@
   <div class="option">
      <input type="text" name="réponse" id="zoneréponse" placeholder="Entrer votre réponse ici !" >
      <span> 
-       <button id="btnnext"> <p>next</p> </button>
-       <button id="btnok"> <p>ok</p> </button> 
+       <button title="Sauter cette image" id="btnnext"> <p>next</p> </button>
+       <button title="Valider votre réponse" id="btnok"> <p>ok</p> </button> 
      </span>
   </div>
 
   <div class="score">
        <p>Votre score : <span>0</span></p>
-    </div>
-    
-
- <div class="partager">
-       <button class="btnpartager">Partager</button>  
   </div>
-  
- 
-  <footer>
-    <p>&copy; Lunarix 02 2024<img src="lunarix.png"></p>
-  </footer>
+  <div class="partager">
+       <button title="Partager votre score" class="btnpartager">Partager &nbsp<i class="fa-solid fa-share"></i></button>
+       <button title="Laisser nous un commentaire" class="btncommenter">Commenter&nbsp <i class="fa-solid fa-comment"></i></button>  
+  </div>
 
-   
+</body>
+
+<footer>
+    <p>&copy; Lunarix 02 2024<img src="lunarix.png"></p>
+</footer>
+
   <div class="popupbackground">
     <div class="popup">
        <p>Partager votre score avec un ami !</p>
        <form method="get" action="">
-         <label for="nom">Entrer votre nom !</label>
-         <input type="text" id="nom" name="nom" placeholder="Nom">
+         <label for="nom">Entrer votre nom !</label>         
+         <input title="Nom" type="text" id="nom" name="nom" placeholder="Nom">
          <label for="email">Entrer l'email de votre ami !</label>
-         <input type="text" id="email" name="email" placeholder="Ex: xxx@gmail.com">
-         <button id="btnenvoyer">Envoyer</button>
+         <input title="Email" type="text" id="email" name="email" placeholder="Ex: xxx@gmail.com">
+         <button title="envoyer et fermer la popup" id="btnenvoyer">Envoyer</button>
        </form>
     </div>
   </div>
-  
 
-</body>
-</html>
+  <div class="popupbackground2">
+    <div class="popup2">
+       <p>Partager nous vos suggestion !</p>
+       <form method="get" action="">
+         <label for="nom2">Entrer votre nom !</label>         
+         <input title="Nom" type="text" id="nom2" name="nom2" placeholder="Nom">
+         <label for="commentaire">Entrer vos commentaires !</label>         
+         <textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea>
+         <button title="envoyer et fermer la popup" id="btnsentcomment">Envoyer</button>
+       </form>
+    </div>
+  </div>
+
+
+  </html>
